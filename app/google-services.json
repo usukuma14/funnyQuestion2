@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "540890251807",
+    "firebase_url": "https://funnyquestion-bd59b.firebaseio.com",
+    "project_id": "funnyquestion-bd59b",
+    "storage_bucket": "funnyquestion-bd59b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540890251807:android:e2528994860cc3c1",
+        "android_client_info": {
+          "package_name": "thailand.soumbundit.jirawat.funnyquestion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540890251807-7ibl66sgv9bphqrjasbevsqdprar5rl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thailand.soumbundit.jirawat.funnyquestion",
+            "certificate_hash": "e8c45f1bc7ea8f92fbb50255692f64c0b26da431"
+          }
+        },
+        {
+          "client_id": "540890251807-jrsbbljsud801f2a2kq36uv5aep3gkr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA24PP6wLWqTM0xVXGkCVsevT91m1YWVQk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540890251807-jrsbbljsud801f2a2kq36uv5aep3gkr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
