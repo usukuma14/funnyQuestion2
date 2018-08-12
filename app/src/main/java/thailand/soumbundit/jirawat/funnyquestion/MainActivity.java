@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import thailand.soumbundit.jirawat.funnyquestion.fragment.MainFragment;
+import thailand.soumbundit.jirawat.funnyquestion.fragment.MainFragment2;
 
 public class MainActivity extends AppCompatActivity {
 

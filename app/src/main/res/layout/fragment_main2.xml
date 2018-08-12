@@ -2,55 +2,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-
-    <!--Content-->
     <LinearLayout
-        android:layout_margin="30dp"
-        android:background="@drawable/bg_logo"
+        android:layout_margin="20sp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!--User-->
+     <!--user   -->
         <EditText
-            android:textSize="@dimen/h2"
-            android:background="@drawable/textfield_user"
+            android:hint="@string/name"
             android:inputType="text"
-            android:hint="@string/user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <!--Password-->
+        <!--password-->
         <EditText
-            android:textSize="@dimen/h2"
-            android:background="@drawable/textfield_password"
-            android:inputType="textPassword"
             android:hint="@string/password"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <!--Login-->
+        <EditText
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <Button
-            android:textColor="#ffffff"
-            android:background="@drawable/bg_button"
             android:text="Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <!--Repister-->
         <TextView
-            android:clickable="true"
-            android:id="@+id/txtRegister"
             android:textColor="@color/colorAccent"
-            android:layout_marginTop="15dp"
-            android:layout_gravity="center_horizontal"
-            android:textSize="@dimen/h2"
-            android:text="New Register"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="New register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
-
-
     </LinearLayout>
 
 
