@@ -1,7 +1,53 @@
 package thailand.soumbundit.jirawat.funnyquestion.fragment;
 
 
-public class ServiceFragment  {
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
+import thailand.soumbundit.jirawat.funnyquestion.R;
+import thailand.soumbundit.jirawat.funnyquestion.utility.MyConstant;
 
+public class ServiceFragment extends Fragment {
+
+    private int indexAnint = 0;
+
+    public static ServiceFragment serviceInstant(int index) {
+
+        ServiceFragment serviceFragment = new ServiceFragment();
+        Bundle bundle = new Bundle();
+        bundle.putInt("Index", index);
+
+        serviceFragment.setArguments(bundle);
+        return serviceFragment;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        indexAnint = getArguments().getInt("Index");
+
+//        Show Title
+        showTitle();
+    }
+
+    private void showTitle() {
+        TextView textView = getView().findViewById(R.id.txtShowTitle);
+        MyConstant myConstant =new MyConstant();
+        String[] strings = myConstant.getUnitTitleStrings();
+        textView.setText(strings[indexAnint]);
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_service, container, false);
+        return view;
+
+    }
 }//Main Class
