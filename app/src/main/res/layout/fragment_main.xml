@@ -13,15 +13,17 @@
 
         <!--User-->
         <EditText
+            android:id="@+id/edtEmail"
             android:textSize="@dimen/h2"
             android:background="@drawable/textfield_user"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:hint="@string/user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--Password-->
         <EditText
+            android:id="@+id/edtPassword"
             android:textSize="@dimen/h2"
             android:background="@drawable/textfield_password"
             android:inputType="textPassword"
@@ -31,6 +33,7 @@
 
         <!--Login-->
         <Button
+            android:id="@+id/btnLogin"
             android:textColor="#ffffff"
             android:background="@drawable/bg_button"
             android:text="Login"
