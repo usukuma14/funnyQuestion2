@@ -17,10 +17,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import thailand.soumbundit.jirawat.funnyquestion.fragment.ServiceFragment;
+import thailand.soumbundit.jirawat.funnyquestion.fragment.Unit1Fragment;
 
 public class ServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private String nameUserString;
+    private String nameUserString, uidUserString;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private TextView unit1TextView, unit2TextView, unit3TextView,
@@ -34,14 +35,24 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
 //        Find User
         findUser();
 
-
 //        Create Toolbar
         createToolbar();
 //          Unit Controller
         unitController();
 
+//        Add Fragment
+        addFragment(savedInstanceState);
 
     }  //Main Method
+
+    private void addFragment(Bundle savedInstanceState) {
+        if (savedInstanceState == null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.contentServiceFragment, Unit1Fragment.unit1Instance(uidUserString))
+                    .commit();
+        }
+    }
 
     private void unitController() {
         unit1TextView = findViewById(R.id.txtUnit1);
@@ -105,6 +116,7 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         nameUserString = firebaseUser.getDisplayName();
+        uidUserString = firebaseUser.getUid();
     }
 
     private void createToolbar() {
@@ -135,29 +147,28 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
         switch (view.getId()) {
 
             case R.id.txtUnit1:
-                index = 0;
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentServiceFragment, Unit1Fragment.unit1Instance(uidUserString))
+                        .commit();
                 break;
             case R.id.txtUnit2:
-                index = 1;
+
                 break;
             case R.id.txtUnit3:
-                index = 2;
+
                 break;
             case R.id.txtUnit4:
-                index = 3;
+
                 break;
             case R.id.txtUnit5:
-                index = 4;
+
                 break;
             case R.id.txtUnit6:
-                index = 5;
+
                 break;
         }
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.contentServiceFragment, ServiceFragment.serviceInstant(index))
-                .commit();
 
 
     } //onClick
