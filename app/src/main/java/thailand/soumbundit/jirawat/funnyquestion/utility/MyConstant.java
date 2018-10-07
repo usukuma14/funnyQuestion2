@@ -40,7 +40,7 @@ public class MyConstant {
             "xxx",
             "xxx",
             "xxx",
-            "xxx" };
+            "xxx"};
 
     private String[] chioceSpinner3Strings = new String[]{
             "3)..........",
@@ -52,7 +52,29 @@ public class MyConstant {
             "xxx",
             "xxx",
             "xxx",
-            "To present projects" };
+            "To present projects"};
+
+    private String[] chioceSpinner4Strings = new String[]{
+            "..........",
+            "Input devices",
+            "Input device",
+            "Input Devices",
+            "Input Device",
+            "Output devices",
+            "Output device",
+            "Output Devices",
+            "Output Device",
+            "System unit",
+            "System Unit",
+            "Storage devices",
+            "Storage device",
+            "Storage Devices",
+            "Storage Device",
+            "Communication devices",
+            "Communication device",
+            "Communication Devices",
+            "Communication Device"
+            };
 
 
     private String[] unitTitleStrings = new String[]{
