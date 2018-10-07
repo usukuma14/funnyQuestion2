@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 import java.util.zip.Inflater;
@@ -36,9 +37,15 @@ public class Unit1Fragment extends Fragment {
         secondSpinner();
 
         thirdSpinner();
-
+//        Answer Controller
+        answer4Controller();
 
     } //Main Method
+
+    private void answer4Controller() {
+        EditText editText = getView().findViewById(R.id.edtAnswer);
+
+    }
 
     private void firstSpinner() {
         Spinner spinner = getView().findViewById(R.id.spinner1);
