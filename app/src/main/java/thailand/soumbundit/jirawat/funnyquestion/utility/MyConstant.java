@@ -1,7 +1,15 @@
 package thailand.soumbundit.jirawat.funnyquestion.utility;
 
 public class MyConstant {
-
+    //    item
+    private String[] chioceSpinnerItemStrings = new String[]{
+            "????",
+            "game consoles",
+            "webcam",
+            "CPU",
+            "external drive",
+            "headset",
+            "joystick"};
     //    Choice Spinner 1
     private String[] chioceSpinner1Strings = new String[]{
             "1)..........",
@@ -87,6 +95,15 @@ public class MyConstant {
     };
 
 //    Getter
+
+
+    public String[] getChioceSpinnerItemStrings() {
+        return chioceSpinnerItemStrings;
+    }
+
+    public String[] getChioceSpinner4Strings() {
+        return chioceSpinner4Strings;
+    }
 
     public String[] getChioceSpinner1Strings() {
         return chioceSpinner1Strings;
