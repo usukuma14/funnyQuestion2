@@ -1,5 +1,6 @@
 package thailand.soumbundit.jirawat.funnyquestion.fragment;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -7,18 +8,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
 import java.util.zip.Inflater;
 
 import thailand.soumbundit.jirawat.funnyquestion.R;
+import thailand.soumbundit.jirawat.funnyquestion.ServiceActivity;
 import thailand.soumbundit.jirawat.funnyquestion.utility.MyConstant;
 
 public class Unit1Fragment extends Fragment {
     //    Explicit
     private MyConstant myConstant = new MyConstant();
-
+    private MediaPlayer mediaPlayer;
 
     public static Unit1Fragment unit1Instance(String uidString) {
         Unit1Fragment unit1Fragment = new Unit1Fragment();
@@ -39,6 +42,8 @@ public class Unit1Fragment extends Fragment {
         thirdSpinner();
 //        Answer Controller
         answer4Controller();
+
+
         item1Spinner();
         item2Spinner();
         item3Spinner();
@@ -46,7 +51,28 @@ public class Unit1Fragment extends Fragment {
         item5Spinner();
         item6Spinner();
 
+        startMedia();
+
+
     } //Main Method
+
+    private void startMedia() {
+        mediaPlayer = MediaPlayer.create(Unit1Fragment.this.getActivity(),R.raw.unit1);
+        final Button button = getView().findViewById(R.id.playMedia);///*****
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.pause();
+                    button.setText("Resume");
+                } else {
+                    mediaPlayer.start();
+                    button.setText("Pause");
+                }
+            }
+        });
+    }//Play Media
 
     private void item1Spinner() {
         Spinner spinner = getView().findViewById(R.id.spinnerItem1);
