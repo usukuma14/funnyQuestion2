@@ -21,7 +21,7 @@ import thailand.soumbundit.jirawat.funnyquestion.utility.MyConstant;
 public class Unit1Fragment extends Fragment {
     //    Explicit
     private MyConstant myConstant = new MyConstant();
-    private MediaPlayer mediaPlayer;
+    private MediaPlayer mediaPlayer1;
 
     public static Unit1Fragment unit1Instance(String uidString) {
         Unit1Fragment unit1Fragment = new Unit1Fragment();
@@ -51,28 +51,106 @@ public class Unit1Fragment extends Fragment {
         item5Spinner();
         item6Spinner();
 
-        startMedia();
+//      Practice :listening
+        playMedia1();
 
+        Listening1spinner();
+        Listening2spinner();
+        Listening3spinner();
+        Listening4spinner();
+        Listening5spinner();
+        Listening6spinner();
+        Listening7spinner();
+        Listening8spinner();
 
     } //Main Method
 
-    private void startMedia() {
-        mediaPlayer = MediaPlayer.create(Unit1Fragment.this.getActivity(),R.raw.unit1);
-        final Button button = getView().findViewById(R.id.playMedia);///*****
-        button.setOnClickListener(new View.OnClickListener() {
+    private void Listening1spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening1spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
 
+    private void Listening2spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening2spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Listening3spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening3spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Listening4spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening4spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Listening5spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening5spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Listening6spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening6spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Listening7spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening7spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Listening8spinner() {
+        Spinner spinner = getView().findViewById(R.id.listening8spinner);
+        String[] strings = myConstant.getChioceSpinner5Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+
+
+    private void playMedia1() {
+        mediaPlayer1 = MediaPlayer.create(Unit1Fragment.this.getActivity(),R.raw.unit1);
+
+        final Button button1 = getView().findViewById(R.id.playMedia1);///*****
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mediaPlayer.isPlaying()) {
-                    mediaPlayer.pause();
-                    button.setText("Resume");
+                if (mediaPlayer1.isPlaying()) {
+                    mediaPlayer1.pause();
+                    button1.setText("Resume");
                 } else {
-                    mediaPlayer.start();
-                    button.setText("Pause");
+                    mediaPlayer1.start();
+                    button1.setText("Pause");
                 }
             }
         });
-    }//Play Media
+    }//Play Media Clip1
+
+
+
 
     private void item1Spinner() {
         Spinner spinner = getView().findViewById(R.id.spinnerItem1);

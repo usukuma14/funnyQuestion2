@@ -94,8 +94,31 @@ public class MyConstant {
             "Unit6"
     };
 
-//    Getter
 
+
+    private String[] chioceSpinner5Strings = new String[]{
+            "..........",
+            "To add a sound track",
+            "To write assignments",
+            "To make CDs",
+            "To start his own website to try to sell directly",
+            "To make birthday cards",
+            "To organize the paintings themes",
+            "To email tutor if she has some problem with the course work",
+            "To encourage young students, to tell stories",
+
+    }; //Practice: Listening
+
+
+
+
+
+
+
+//    Getter
+    public String[] getChioceSpinner5Strings() {
+        return chioceSpinner5Strings;
+    }
 
     public String[] getChioceSpinnerItemStrings() {
         return chioceSpinnerItemStrings;

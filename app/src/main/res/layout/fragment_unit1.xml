@@ -543,22 +543,117 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/playMedia"
+                android:id="@+id/playMedia1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Play media"/>
+                android:text="Play media1"/>
+            <!--Anda, age 8, spinner-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anda, age 8"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
 
+            <Spinner
+                android:id="@+id/listening1spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
 
+            <Spinner
+                android:id="@+id/listening2spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
+            <!--A primary schoolteacher, spinner-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A primary schoolteacher"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
 
+            <Spinner
+                android:id="@+id/listening3spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
 
+            <Spinner
+                android:id="@+id/listening4spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
+            <!--A university student, spinner-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A university student"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
 
+            <Spinner
+                android:id="@+id/listening5spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
 
+            <Spinner
+                android:id="@+id/listening6spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
+            <!--An artist-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An artist"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
 
+            <Spinner
+                android:id="@+id/listening7spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
 
+            <Spinner
+                android:id="@+id/listening8spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4" />
 
+            <!--Language work-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language work"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+            <!--1. What are the components of a computer?-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Wh-question-The simple present tense"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Form:"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
 
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whquestion word (what, when...) + do / does + Subject (I, you, we...) + verb +others"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
 
 
 
