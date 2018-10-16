@@ -631,7 +631,7 @@
                 android:text="Language work"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold" />
-            <!--1. What are the components of a computer?-->
+            <!--Wh-question-The simple present tense-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
