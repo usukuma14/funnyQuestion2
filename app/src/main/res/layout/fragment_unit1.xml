@@ -529,16 +529,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Listening"
                 android:paddingTop="@dimen/padding"
+                android:text="Listening"
                 android:textSize="@dimen/h2"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Listen and complete the table how they use computers."
                 android:paddingTop="@dimen/padding"
+                android:text="Listen and complete the table how they use computers."
                 android:textSize="@dimen/h2"
                 android:textStyle="bold" />
 
@@ -546,7 +546,7 @@
                 android:id="@+id/playMedia1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Play media1"/>
+                android:text="Play media1" />
             <!--Anda, age 8, spinner-->
             <TextView
                 android:layout_width="wrap_content"
@@ -639,7 +639,7 @@
                 android:text="Wh-question-The simple present tense"
                 android:textSize="@dimen/h2"
                 android:textStyle="bold" />
-
+            <!--Form:-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -647,7 +647,7 @@
                 android:text="Form:"
                 android:textSize="@dimen/h2"
                 android:textStyle="bold" />
-
+            <!--Whquestion word.....-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -655,6 +655,217 @@
                 android:textSize="@dimen/h2"
                 android:textStyle="normal" />
 
+            <!--Structure: Wh-question-The simple present tense-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_marginBottom="@dimen/padding"
+                android:text="Structure: Wh-question-The simple present tense"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+
+            <TableLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_row_bg">
+
+                <!--Roll 1-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="WhQuestion Word"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="AuxilaryVerb"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="Subject"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="Verb"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="others"
+                        android:textStyle="bold" />
+                </TableRow>
+                <!--Roll 2-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="Where"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="do"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="you"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="go"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/table_cell_bg"
+                        android:padding="@dimen/padding4"
+                        android:text="to?"
+                        android:textStyle="normal" />
+                </TableRow>
+
+
+            </TableLayout>
+            <!--These whquestion words areat the beginning of...-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="These whquestion words areat the beginning of the sentence. After them, we use auxiary verb and subject.We don't use yes or no in the answer."
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Example Sentences:"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--'Where' question asks for the place:-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="'Where' question asks for the place:"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where does she live? --> She lives in New York."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where do you meet your friends? --> I meet them at the school."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <!--'What' question asks for information...-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="'What' question asks for information about something:"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What do you like eating most? --> I like eating fruits most."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What do you read? --> I read funny books."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <!--'When' question asks for information...-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="'When' question asks for information about time:"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When do you meet your father? --> I meet him at 9."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When does she come home? --> She comes home late."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Language work: Practice"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Order these questions to the right form of wh-question-The present simple tense to appropriate with answers."
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
 
 
 
