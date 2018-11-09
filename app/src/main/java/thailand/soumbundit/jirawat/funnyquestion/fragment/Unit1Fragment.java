@@ -63,7 +63,134 @@ public class Unit1Fragment extends Fragment {
         Listening7spinner();
         Listening8spinner();
 
+
+        Languagework1spinner();
+      //  Languagework2spinner();
+      //  Languagework3spinner();
+      //  Languagework4spinner();
+      //  Languagework5spinner();
+      //  Languagework6spinner();
+      //  Languagework7spinner();
+      //  Languagework8spinner();
+      //  Languagework9spinner();
+
+        Reading1spinner();
+        Reading2spinner();
+        Reading3spinner();
+        Reading4spinner();
+        Reading5spinner();
+
+
+
+
+
+
     } //Main Method
+
+    private void Reading1spinner() {
+        Spinner spinner = getView().findViewById(R.id.readingspinner1);
+        String[] strings = myConstant.getChioceSpinner7Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Reading2spinner() {
+        Spinner spinner = getView().findViewById(R.id.readingspinner2);
+        String[] strings = myConstant.getChioceSpinner7Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Reading3spinner() {
+        Spinner spinner = getView().findViewById(R.id.readingspinner3);
+        String[] strings = myConstant.getChioceSpinner7Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Reading4spinner() {
+        Spinner spinner = getView().findViewById(R.id.readingspinner4);
+        String[] strings = myConstant.getChioceSpinner7Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Reading5spinner() {
+        Spinner spinner = getView().findViewById(R.id.readingspinner5);
+        String[] strings = myConstant.getChioceSpinner7Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
+    private void Languagework1spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework1spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework2spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework2spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework3spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework3spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework4spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework4spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework5spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework5spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework6spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework6spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework7spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework7spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework8spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework8spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+    private void Languagework9spinner() {
+        Spinner spinner = getView().findViewById(R.id.languagework9spinner);
+        String[] strings = myConstant.getChioceSpinner6Strings();
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, strings);
+        spinner.setAdapter(stringArrayAdapter);
+    }
+
 
     private void Listening1spinner() {
         Spinner spinner = getView().findViewById(R.id.listening1spinner);

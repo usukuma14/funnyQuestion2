@@ -111,11 +111,44 @@ public class MyConstant {
 
 
 
+    private String[] chioceSpinner6Strings = new String[]{
+            "..",
+            "you",
+            "computer",
+            "your",
+            "use",
+            "in",
+            "do",
+            "How",
+            "freetime",
+            "?",
 
+    }; //Language work: Practice
+
+
+
+    private String[] chioceSpinner7Strings = new String[]{
+            "Answer:.........",
+            "Edutainment",
+            "Multimedia",
+            "Expert system",
+            "Telecommute",
+            "Information Superhighway"
+    }; //B: Re-read the text to find the answers to these question.
 
 
 
 //    Getter
+
+
+    public String[] getChioceSpinner7Strings() {
+        return chioceSpinner7Strings;
+    }
+
+    public String[] getChioceSpinner6Strings() {
+        return chioceSpinner6Strings;
+    }
+
     public String[] getChioceSpinner5Strings() {
         return chioceSpinner5Strings;
     }

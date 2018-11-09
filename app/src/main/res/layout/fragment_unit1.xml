@@ -220,7 +220,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="b.Central Processing United" />
-                >
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -400,7 +399,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding4"
+                android:layout_marginTop="@dimen/padding8"
                 android:text="1.A keyboard is an output device."
                 android:textSize="@dimen/h2"
                 android:textStyle="normal" />
@@ -408,16 +407,17 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding8"
-                android:orientation="vertical">
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="True" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="False" />
             </RadioGroup>
@@ -434,16 +434,17 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding8"
-                android:orientation="vertical">
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="True" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="False" />
             </RadioGroup>
@@ -460,16 +461,17 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding8"
-                android:orientation="vertical">
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="True" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="False" />
             </RadioGroup>
@@ -485,16 +487,17 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding8"
-                android:orientation="vertical">
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="True" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="False" />
             </RadioGroup>
@@ -511,16 +514,17 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/padding8"
-                android:orientation="vertical">
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="True" />
 
                 <RadioButton
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="False" />
             </RadioGroup>
@@ -665,105 +669,87 @@
                 android:textSize="@dimen/h2"
                 android:textStyle="bold" />
 
-
             <TableLayout
 
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/table_row_bg">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <!--Roll 1-->
-                <TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_bg">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
-                        android:text="WhQuestion Word"
+                        android:layout_gravity="center"
+                        android:text="WhQuestion"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
-                        android:text="AuxilaryVerb"
+                        android:layout_gravity="center"
+                        android:text="Auxilary Verb"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="Subject"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="Verb"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="others"
                         android:textStyle="bold" />
                 </TableRow>
                 <!--Roll 2-->
-                <TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="Where"
                         android:textStyle="normal" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="do"
                         android:textStyle="normal" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="you"
                         android:textStyle="normal" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="go"
                         android:textStyle="normal" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
                         android:background="@drawable/table_cell_bg"
-                        android:padding="@dimen/padding4"
+                        android:layout_gravity="center"
                         android:text="to?"
                         android:textStyle="normal" />
                 </TableRow>
 
-
             </TableLayout>
+
+
+
             <!--These whquestion words areat the beginning of...-->
             <TextView
                 android:layout_width="wrap_content"
@@ -850,7 +836,7 @@
                 android:textSize="@dimen/h2"
                 android:textStyle="normal" />
 
-
+            <!--Language work: Practice-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -867,9 +853,702 @@
                 android:textSize="@dimen/h2"
                 android:textStyle="bold" />
 
+            <!--Language work: Practice#1-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <!--Roll 1-->
+                <TableRow>
 
+                    <Spinner
+                        android:id="@+id/languagework1spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
+                    <Spinner
+                        android:id="@+id/languagework2spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
+                    <Spinner
+                        android:id="@+id/languagework3spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
+                    <Spinner
+                        android:id="@+id/languagework4spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
 
+                    <Spinner
+                        android:id="@+id/languagework5spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
 
+                    <Spinner
+                        android:id="@+id/languagework6spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
+
+                    <Spinner
+                        android:id="@+id/languagework7spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
+
+                    <Spinner
+                        android:id="@+id/languagework8spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
+
+                    <Spinner
+                        android:id="@+id/languagework9spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding4" />
+
+                </TableRow>
+            </TableLayout>
+
+            <!--Specialist Reading-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="Specialist Reading"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The ability of tiny computing devices to control complex operations has transformed the way many tasks are performed, ranging from scientific research to producing consumer products. Tiny 'computers on a chip' are used in medical equipment, home appliances, cars and toys. Workers use handheld computing devices to collect data at a customer site, to generate forms, to control inventory, and to serve as desktop organizers."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not only is computing equipment getting smaller, it is getting more sophisticated. Computers are part of many machines and devices that once required continual human supervision and control. Today, computers in security systems result in safer environments, computers in cars improve energy efficiency, and computers in phones provide features such as call forwarding, call monitoring, and20call answering."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="These smart machines are designed to take over some of the basic tasks previously performed by people; by so doing, they make life a little easier and a little more pleasant."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart cards store vital information such as health records, drivers' licenses, bank balances, and so on. Smart phones, cars, and appliances with built in computers can be programmed to better meet individual needs. A smart house has a built-in monitoring system that can turn lights on and off, open and close windows, operate the oven, and more."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With small computing devices available for performing smart tasks like cooking dinner, programming the DVD recorder, and controlling the flow of information in an organization, people are able to spend more time doing what they often do best -being creative. Computers can help people work more creatively."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multimedia systems are known for their educational and entertainment value, which we call 'edutainment'. Multimedia combines text with sound, video, animation, and graphics, which greatly enhances the interaction between user and machine and can make information more interesting and appealing to people. Expert systems software enables"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="computers to 'think' like experts. Medical diagnosis expert systems, for example, can help doctors pinpoint a patient's illness, suggest further tests, and prescribe appropriate drugs."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connectivity enables computers and software that might otherwise be incompatible to communicate and to share resources. Now that computers are proliferating in many areas and networks are available for people to access data and communicate with others, personal computers are becoming interpersonal PCs. They have the potential to significantly improve the way we relate to each other. Many people today telecommute -that is, use their computers to stay in touch 65 with the office while they are working at home. With the proper tools, hospital staff can get a diagnosis from a medical expert hundreds or thousands of miles away. Similarly, the disabled can communicate more 70 effectively with others using computers."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance learning and videoconferencing are concepts made possible with the use of an electronic classroom or boardroom accessible to people in remote locations. Vast databases 75 of information are currently available to users of the Internet, all of whom can send mail messages to each other. The information superhighway is designed to significantly expand this interactive connectivity so that 80 people all over the world will have free access to all these resources."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="People power is critical to ensuring that hardware, software, and connectivity are effectively integrated in a socially responsible 85 way. People -computer users and computer professionals -are the ones who will decide which hardware, software, and networks endure and how great an impact they will have on our lives. Ultimately people power must be exercised to ensure that computers are used not only efficiently but in a socially responsible way."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <!--A: Find the answers to these questions in the following text.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="A: Find the answers to these questions in the following text."
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--1. Name some types of devices that use 'computers on a chip'.-->
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Name some types of devices that use 'computers on a chip'"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/Reading1Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/Reading2Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/Reading3Answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="text" />
+
+            <!--2. Which is not the use of handheld computers are mentioned in the text?-->
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Which is not the use of handheld computers are mentioned in the text?"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a.To collect data at a customer site" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b.To generate forms" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c.To control inventory" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d.To control pets in the house" />
+            </RadioGroup>
+
+            <!--3. What are smart cards used for?-->
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. What are smart cards used for?"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a.To store vital information" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b.To save money" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c.To write programs" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d.To build cars" />
+            </RadioGroup>
+
+            <!--4: What are the benefits of using computers with the following item?-->
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4: What are the benefits of using computers with the following item?"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Security system"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Cars"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Phones"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a.Call forwarding, call monitoring, and call answering" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b.Improve energy efficiency" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c.Safer environment" />
+
+            </RadioGroup>
+
+            <!--B: Re-read the text to find the answers to these question.-->
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B: Re-read the text to find the answers to these question."
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edutainment     MultimediaExpert      system"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telecommute      Information Superhighway"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <!--1. Multimedia materials with a combination of educational and entertainment context.-->
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Multimedia materials with a combination of educational and entertainment context."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/readingspinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8" />
+
+            <!--2. A combination of text with sound, video, animation, and graphics.-->
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. A combination of text with sound, video, animation, and graphics."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/readingspinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8" />
+
+            <!--3. Use computer to stay in touch with the office while working at home.-->
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Use computer to stay in touch with the office while working at home."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/readingspinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8" />
+
+            <!--4. Software that enables computers to “think” like experts-->
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Software that enables computers to “think” like experts"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/readingspinner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8" />
+
+            <!--5. Internet system designed to provide free interactive access to vast resources for people all over the world..-->
+            <TextView
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Internet system designed to provide free interactive access to vast resources for people all over the world."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/readingspinner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8" />
+
+            <!--Choose the following statements as True or False.-->
+            <TextView
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose the following statements as True or False."
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--1. Computers in security systems result in safer environment.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="1. Computers in security systems result in safer environment."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--2 .Computers in cars improve energy efficiency-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="2 .Computers in cars improve energy efficiency"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--3. Smart cards store vital information.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="3. Smart cards store vital information."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--4. Smart cards are able to use for turning on and off the lights,-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="4. Smart cards are able to use for turning on and off the lights,"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--5. Multimedia combines text with sound, video, animation and graphics are called videoconferencing-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="5. Multimedia combines text with sound, video, animation and graphics are called videoconferencing"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--6. A built-in monitoring system has been used in a smart car.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="6. A built-in monitoring system has been used in a smart car."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--7. Expert systems can help doctors pinpoints a patient’s illness.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="7. Expert systems can help doctors pinpoints a patient’s illness."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--8. Telecommute is using computers to stay in touch with the office while working at home.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="8. Telecommute is using computers to stay in touch with the office while working at home."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--9. Telecommute can be used of an electronic classroom or boardroom accessible.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="9. Telecommute can be used of an electronic classroom or boardroom accessible."
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
+
+            <!--10. Vast data bases can help the people in remote location-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:text="10. Vast data bases can help the people in remote location"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False" />
+            </RadioGroup>
 
 
         </LinearLayout>
