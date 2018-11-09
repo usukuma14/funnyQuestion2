@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import thailand.soumbundit.jirawat.funnyquestion.fragment.ServiceFragment;
 import thailand.soumbundit.jirawat.funnyquestion.fragment.Unit1Fragment;
+import thailand.soumbundit.jirawat.funnyquestion.fragment.Unit4Fragment;
 
 public class ServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -159,7 +160,10 @@ public class ServiceActivity extends AppCompatActivity implements View.OnClickLi
 
                 break;
             case R.id.txtUnit4:
-
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentServiceFragment, Unit4Fragment.unit4Instance(uidUserString))
+                        .commit();
                 break;
             case R.id.txtUnit5:
 
