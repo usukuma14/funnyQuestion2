@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Contents-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+            <!--title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Unit 4"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="The internet"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:text="At the end of this unit, students are able to describe the types of Internet access providers: Internet service providers, online service providers, wireless Internet service providers"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <!--head 1-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8"
+                android:text="Warm-up"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <!--1.What is the Internet?-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.What is the Internet?"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a.A wireless fidelity network uses radio signals to provide high-speed." />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b.A wide-area network spanning the globe." />
+
+            </RadioGroup>
+
+            <!--2. What do you often do on the Internet?-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8"
+                android:text="2. What do you often do on the Internet?"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What do you often do on the Internet? Oder the important by choosing 1-5"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding8"
+                android:text="5 = always do on the Internet"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 = usually do on the Internet"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 = often do on the Internet"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2= sometimes do on the Internet"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1= occationally do on the Internet"
+                android:textSize="@dimen/h2"
+                android:textStyle="normal" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Look up information" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice1spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Schoolwork, jobs, how-to, research, banking, directions, businesses, Email" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice2spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Buy and sell products" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice3spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Social networking (Facebook, twitter, blogs)" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice4spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Share with friends and others what you’re doing, including sharing pictures and videos" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice5spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Watch and post videos" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice6spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• News and weather" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice7spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Watch and post videos" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice8spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• News and weather" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice9spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Gas pricesl" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice10spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Gamesl" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice11spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Take college courses (MOOC)" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice12spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Monitor your home when you are away" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice13spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Financial transactions; e.g. banking, stock market, pay bills" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice14spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• View patents on the Patent/Trademark web site" />
+
+                    <Spinner
+                        android:minWidth="150dp"
+                        android:id="@+id/choice15spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <!--Presentation-->
+                <TextView
+                    android:layout_marginTop="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Presentation"
+                    android:textSize="@dimen/h1"
+                    android:textStyle="bold" />
+
+                <!--1. The internet’s History-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="1. The internet’s History"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The internet, also called the Net, is a worldwide collection of networks that links millions of businesses, government agencies, educational institutions, and individuals. The Internet has its roots in ARPANET, a network started in 1969 to link scientific and academic researchers across the United States. In 1986, the National Science Foundation connected its huge network, called NSF net, to ARPANET, creating a configuration of complex networks and hosts that became known as the Internet. Today, more than 550 million bostcomputers connect to the Internet."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <!--2. What are the various types of the Internet connections?-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="2. What are the various types of the Internet connections?"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Many home and small business users connect to the Internet via high-speed broadband Internet service. With broadband Internet service, your computer or mobile device usually is connected to the Internet the entire time it is powered on. Examples of broadband Internet service include cable, DSL, fiber, radio signals and satellite."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="Cable Internet service"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="provides high-speed Internet access through the cable television network via a cable modern."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="DSL."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(digital subscriber line) provides high-speed Internet connection using regular copper telephone lines."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="Fiber to the Premises (FTTP)"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="uses fiber-optic cable to provide high-speed Internet access to home and business users."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="Fixed wireless"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="provides high-speed Internet connections using a dish-shaped antenna on your house or business to communicate with a tower location via radio signals."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="A cellular radio network"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="offers high-speed Internet connections to devices with built-in compatible technology or computers with wireless moderns."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="A Wi-Fi"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(wireless fidelity) network uses radio signals to provide high-speed Internet connections to compatible or properly equipped wireless computers and devices."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <!--3.What are the types of Internet Access providers?-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="3.What are the types of Internet Access providers?"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="An access provider is a business that provides access to the Internet free of for a fee."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="An ISP (Internet service provider)"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is a regional or national access provider."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="An online service provider (OSP)"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="provides Internet access in addition to members-only features."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="A wireless Internet service provider"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="provides wireless Internet access to desktop and notebook computers and mobile devices with built-in wireless capabilities (such as Wi-Fi) or to computers using wireless moderns or wireless access devices."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <!--4. Internet Addresses-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="4. Internet Addresses"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="What is the purpose of an IP Address, and what is its relationship to a domain name?"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="An IP address (Internet Protocol address)"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is a number that uniquely identifies each computer of device connected to the Internet. The internet relies on IP addresses to send data to computers at specific locations. The IP address usually consists of four groups of numbers, each separated by a period."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:text="A domain name"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="is the text version of an IP address."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP address ==> 72.14.207.99"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domain name ==> www.google.com"
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For example, www.Philips.com.auis the domain name for Philips Australia."
+                    android:textSize="@dimen/h2"
+                    android:textStyle="normal" />
+
+
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
