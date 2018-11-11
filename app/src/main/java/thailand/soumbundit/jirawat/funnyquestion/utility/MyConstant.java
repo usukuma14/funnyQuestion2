@@ -1,6 +1,20 @@
 package thailand.soumbundit.jirawat.funnyquestion.utility;
 
 public class MyConstant {
+
+    //About
+//    #############################
+
+//    ###########################
+
+    //    worm up
+    private int[] answer1TrueInts = new int[]{2,8,13,24};
+    private int[] answer2TrueInts = new int[]{2,3};
+    private int[] answer3TrueInts = new int[]{2,4};
+
+
+//    ############################
+
     //    item
     private String[] chioceSpinnerItemStrings = new String[]{
             "????",
@@ -14,18 +28,18 @@ public class MyConstant {
     private String[] chioceSpinner1Strings = new String[]{
             "1)..........",
             "To listen to music",
-            "xxx",
+            "xxx True",
             "To listen music",
             "xxx",
             "Listen to music",
             "xxx",
             "Listen music",
-            "xxx",
+            "xxx True",
             "Listening to music",
             "xxx",
             "To watch movie",
             "xxx",
-            "Watching movies",
+            "Watching movies True",
             "xxx",
             "To watch movies",
             "xxx",
@@ -36,14 +50,14 @@ public class MyConstant {
             "To play a game",
             "xxx",
             "Playing games",
-            "xxx"};
+            "xxx True"};
 
     private String[] chioceSpinner2Strings = new String[]{
             "2)..........",
             "To play computer games",
-            "Playing computer games",
+            "Playing computer games True",
             "To shop online",
-            "Shopping online",
+            "Shopping online True",
             "xxx",
             "xxx",
             "xxx",
@@ -53,8 +67,8 @@ public class MyConstant {
     private String[] chioceSpinner3Strings = new String[]{
             "3)..........",
             "To search information",
-            "Searching information",
-            "xxx",
+            "Searching information True",
+            "xxx True",
             "xxx",
             "xxx",
             "xxx",
@@ -89,7 +103,7 @@ public class MyConstant {
             "Unit1 Computer Users",
             "Unit2",
             "Unit3",
-            "Unit4",
+            "Unit4 The Internet",
             "Unit5",
             "Unit6"
     };
@@ -140,6 +154,18 @@ public class MyConstant {
 
 //    Getter
 
+
+    public int[] getAnswer1TrueInts() {
+        return answer1TrueInts;
+    }
+
+    public int[] getAnswer2TrueInts() {
+        return answer2TrueInts;
+    }
+
+    public int[] getAnswer3TrueInts() {
+        return answer3TrueInts;
+    }
 
     public String[] getChioceSpinner7Strings() {
         return chioceSpinner7Strings;

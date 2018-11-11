@@ -4,15 +4,7 @@
     android:layout_height="match_parent">
 
 
-    //<!--float-->
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingCheck123"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_action_check"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
 
 
     <!--Contents-->
@@ -1569,15 +1561,15 @@
 
     <!--float-->
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingCheck"
+        android:id="@+id/floatingCheck123"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-
-
         android:layout_alignParentRight="true"
         android:src="@drawable/ic_action_check"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
 
 
 </RelativeLayout>
