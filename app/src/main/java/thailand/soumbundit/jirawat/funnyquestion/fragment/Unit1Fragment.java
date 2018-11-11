@@ -33,9 +33,10 @@ public class Unit1Fragment extends Fragment {
 
 
     private String uidString, nameUnitString, timeTestString, warmUpString,
-            presentString, practiceString;
+            presentString = "non", practiceString;
 
     private String tag = "11Nov1";
+    private String tag2 = "11Nov2";
     private int[] scoreWarmUpInts = new int[]{0, 0, 0};
 
 
@@ -143,6 +144,8 @@ public class Unit1Fragment extends Fragment {
                 dialog.dismiss();
                 findTimeTest();
                 calculateWarmUp();
+                calculatePractice1();
+
 
             }
         });
@@ -150,6 +153,37 @@ public class Unit1Fragment extends Fragment {
 
 
     }
+
+    private void calculatePractice1() {
+
+        int scorePractic1Int = 0;
+        String[] trueAnswerString = myConstant.getPratice1TrueStrings();
+
+        EditText practice1EditText = getView().findViewById(R.id.edtPratice1);
+        EditText practice2EditText = getView().findViewById(R.id.edtPratice2);
+        EditText practice3EditText = getView().findViewById(R.id.edtPratice3);
+        EditText practice4EditText = getView().findViewById(R.id.edtPratice4);
+        EditText practice5EditText = getView().findViewById(R.id.edtPratice5);
+
+        String[] strings = new String[5];
+        strings[0] = practice1EditText.getText().toString().trim();
+        strings[1] = practice2EditText.getText().toString().trim();
+        strings[2] = practice3EditText.getText().toString().trim();
+        strings[3] = practice4EditText.getText().toString().trim();
+        strings[4] = practice5EditText.getText().toString().trim();
+
+        for (int i=0; i<strings.length; i += 1){
+            for (int i1=0; i1< trueAnswerString.length; i1 += 1) {
+                if (strings[i].equals(trueAnswerString[i1])) {
+                    scorePractic1Int += 1;
+
+                }
+
+            }//for2
+        }
+
+        Log.d(tag2, "scorePracetice1 ==> " + scorePractic1Int);
+    } // calculate practice
 
     private void calculateWarmUp() {
         int sumScoreInt = 0;
