@@ -1,9 +1,13 @@
 package thailand.soumbundit.jirawat.funnyquestion.fragment;
 
+import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +16,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.zip.Inflater;
 
 import thailand.soumbundit.jirawat.funnyquestion.R;
@@ -22,6 +29,13 @@ public class Unit1Fragment extends Fragment {
     //    Explicit
     private MyConstant myConstant = new MyConstant();
     private MediaPlayer mediaPlayer1;
+
+
+    private String uidString, nameUnitString, timeTestString, warmUpString,
+    presentString, practiceString;
+
+    private String tag = "11Nov1";
+
 
     public static Unit1Fragment unit1Instance(String uidString) {
         Unit1Fragment unit1Fragment = new Unit1Fragment();
@@ -34,6 +48,22 @@ public class Unit1Fragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+
+        //Find UID, Name Unit of user
+        findUidNameUnit();
+
+        //find TimeTest
+        findTimeTest();
+
+
+
+
+
+
+
+
+
 //        First Spinner
         firstSpinner();
 
@@ -81,11 +111,65 @@ public class Unit1Fragment extends Fragment {
         Reading5spinner();
 
 
+//        Check Floating
+        FloatingActionButton floatingActionButton = getView().findViewById(R.id.floatingCheck123);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Log.d(tag, "You Click Floating");
+                myAlertDialog();
+
+
+            }
+        });
+
+
 
 
 
 
     } //Main Method
+
+    private void myAlertDialog() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setCancelable(false);
+        builder.setIcon(R.drawable.ic_action_alert);
+        builder.setTitle("Warning");
+        builder.setMessage("Need to Exit");
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.show();
+
+
+    }
+
+    private void findTimeTest() {
+        Calendar calendar = Calendar.getInstance();
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yy HH:mm");
+        timeTestString = dateFormat.format(calendar.getTime());
+        Log.d(tag, "timeTestString ==>" + timeTestString);
+    }
+
+    private void findUidNameUnit() {
+        uidString = getArguments().getString("Uid");
+        Log.d(tag, "uidString ==> " + uidString);
+
+        String[] strings = myConstant.getUnitTitleStrings();
+        nameUnitString = strings[0];
+        Log.d(tag, "nameUnitString ==>" + nameUnitString);
+    }
 
     private void Reading1spinner() {
         Spinner spinner = getView().findViewById(R.id.readingspinner1);
